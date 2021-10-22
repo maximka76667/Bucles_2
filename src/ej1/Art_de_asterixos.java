@@ -8,5 +8,4 @@ public class Art_de_asterixos {
 			System.out.println();
 		}
 	}
-
 }
