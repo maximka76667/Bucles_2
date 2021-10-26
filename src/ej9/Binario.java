@@ -15,9 +15,9 @@ public class Binario {
 		
 		if(numero <= 0) System.out.println(numero);
 		
-		while(numero >= 1) {
+		while(numero > 0) {
 			result = (numero % 2) + result;
-			numero = numero / 2;
+			numero /= 2;
 		}
 		
 		System.out.println(result);
