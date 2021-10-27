@@ -12,10 +12,12 @@ public class Binario {
 		entrada.close();
 		
 		String result = "";
-		String accion = "";
 		
+		// Para numeros menor de 0
+		String accion = "";
 		if(numero < 0) accion = "-";
 		
+		// Calculacion binario
 		while(numero != 0) {
 			result = Math.abs(numero % 2) + result;
 			numero /= 2;
