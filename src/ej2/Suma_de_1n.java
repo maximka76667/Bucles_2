@@ -12,7 +12,7 @@ public class Suma_de_1n {
 		double N = entrada.nextDouble();
 		double suma = 0;
 
-		for(int i = 0; i < N; i++) suma += 1d / (i + 1d);
+		for(int i = 1; i <= N; i++) suma += 1d / i;
 		
 		System.out.println("Suma: " + suma);
 
