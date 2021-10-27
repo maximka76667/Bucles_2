@@ -9,12 +9,12 @@ public class Factorial {
 
 		System.out.print("N: ");
 		
-		double N = entrada.nextDouble();
+		int N = entrada.nextInt();
 		double fact = 1;
 
-		for(int i = 0; i < N; i++) fact *= N - i;
+		for(int i = N; i > 1; i--) fact *= i;
 		
-		System.out.println("Suma: " + fact);
+		System.out.println("Factorial: " + fact);
 
 		entrada.close();
 	}
