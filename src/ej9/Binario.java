@@ -12,15 +12,16 @@ public class Binario {
 		entrada.close();
 		
 		String result = "";
+		String accion = "";
 		
-		if(numero <= 0) System.out.println(numero);
+		if(numero < 0) accion = "-";
 		
-		while(numero > 0) {
-			result = (numero % 2) + result;
+		while(numero != 0) {
+			result = Math.abs(numero % 2) + result;
 			numero /= 2;
 		}
 		
-		System.out.println(result);
+		System.out.println(accion + result);
 	}
 
 }
