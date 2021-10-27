@@ -14,8 +14,7 @@ public class Binario {
 		String result = "";
 		
 		// Para numeros menor de 0
-		String accion = "";
-		if(numero < 0) accion = "-";
+		String accion = numero < 0 ? "-" : "";
 		
 		// Calculacion binario
 		while(numero != 0) {
